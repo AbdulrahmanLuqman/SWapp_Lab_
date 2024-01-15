@@ -11,7 +11,7 @@ function app() {
     var description = document.getElementById("description")
 
     // -----YOU MIGHT NEED THIS FOR YOUR BACKEND STUFF, IF NOT.. DELETE IT
-    
+
     // var dataRow = document.getElementById("dataRow")
     // var timeRow = document.getElementById("timeRow")
     // var staffNameRow = document.getElementById("staffNameRow")
@@ -51,9 +51,20 @@ function app() {
         e.preventDefault()
 
         if (!date.value || !time.value || !staffName.value || !clientName || !typeOfIncident || !description.value){
-            console.log("empty")
+            document.querySelector(".error").classList.add("show-error")
+
+            setTimeout(() => {
+                document.querySelector(".error").classList.remove("show-error")
+            }, 1000);
         }else{
-            window.location.pathname = "/table.htm"
+            document.querySelector(".success").classList.add("show-success")
+
+            setTimeout(() => {
+                document.querySelector(".success").classList.remove("show-success")
+            }, 1000);
+            setTimeout(() => {
+                window.location.pathname = "/table.htm"
+            }, 1500);
         }
     })
 }

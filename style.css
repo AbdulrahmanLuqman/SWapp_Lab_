@@ -15,6 +15,15 @@
   color: red;
 }
 
+.error, .success{
+  position: fixed;
+  top: 0;
+  left: 3000px;
+}
+.show-error, .show-success{
+  left: 20px;
+}
+
 
 
 
