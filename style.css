@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav{
+  left : 3000px;
+}
+.show-mobilenav{
+  left: 0;
+}
+
+
+.active{
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+  #bg{
+      width: 40%;
+  }
+}
+@media (max-width: 1024px) {
+    .side-nav{
+      display: none;
+    }
+    .mobile-nav{
+      display: block;
+    }
+  }
+
+  @media (max-width:1040px){
+    #action-buttons{
+        gap: 8px;
+    }
+}
+@media (max-width:1024px) {
+    #hamburger{
+        display: flex;
+    }
+    #action-buttons{
+        gap: 15px;
+    }
+    .back{
+        display: none;
+    }
+}
