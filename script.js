@@ -23,14 +23,23 @@ function app() {
     // time = time.value
     var submitButton = document.querySelector("#btn")
 
-    // var navlinks = document.querySelectorAll(".navlink")
-
+    var navlinks = document.querySelectorAll(".navlink")
+    for (let i = 0; i < navlinks.length; i++) {
+        navlinks[i].addEventListener("click", (e)=>{
+            // e.preventDefault()
+            console.log("hello")
+        })     
+    }
     // console.log(currentRoute)
 
     // for( i = 0; i < navlinks.length; i++){
     //     var linkRoute = navlinks[i].getAttribute("id")
 
-    //     console.log(linkRoute)
+    //     function clicked() {
+    //         console.log(linkRoute)
+    //     }
+
+    //     navlinks[i].addEventListener("click", clicked)
     // }
 
 
